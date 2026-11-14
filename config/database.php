@@ -1,11 +1,11 @@
 <?php
 // database.php
 
-$host   = "cmwg3ac0y093901nogxnqf5u8-addon-mysql";
+$host   = "sql211.infinityfree.com";
 $port   = 3306;
-$user   = "ethiodeploy";
-$pass   = "cfdb3f33979e4b9684e2a7da86092000537f8f2a609ad9a4";
-$dbname = "ethiodeploy";
+$user   = "if0_43438499";
+$pass   = "z3LVDJuBkc41";
+$dbname = "if0_43438499_XXX";
 
 try {
     $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
