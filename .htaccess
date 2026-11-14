@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Keep the Authorization header (needed for Bearer tokens on Apache)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Send everything that isn't a real file to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
